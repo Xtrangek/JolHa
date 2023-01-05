@@ -1,0 +1,541 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error {
+
+    background: #F2DEDE;
+ 
+    color: #0c0101;
+ 
+    padding: 10px;
+ 
+    width: 95%;
+ 
+    border-radius: 5px;
+ 
+    margin: 20px auto;
+ 
+ }
+
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* The width is the width of the web page */
+    margin-bottom: 1%;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: #AAE2D7;
+    border-radius: 100px;
+    color: #062C43;
+    width: 10%;
+    border: 1px solid #062C43;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    min-height: calc(100% - 81px);
+    padding-bottom: 81px;
+    height:100vh;
+    width:100%;
+    background-color: #E5E5E5;;
+}
+
+
+.left-form {
+    width: 50%;
+    height: 100%;
+    display: inline;
+    overflow: hidden;
+    float: left;
+    background: #fff url('logo.png') no-repeat;
+    background-position: center center;
+    padding-bottom: 81px;
+
+}
+
+.top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    overflow: hidden;
+}
+
+.home-mapa {
+    width: 50%;
+}
+
+.banner {
+    width: 100%;
+    height: 29%;
+    flex-direction: column;
+    /* align-items: center; */
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 0%;    /* justify-content: center; */
+}
+
+.top-home {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    overflow: hidden;
+    float: left;
+    background-position: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #E5E5E5;;
+}
+.top-user {
+    width: 5%;
+    height: 10%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    background-position: right right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #E5E5E5;;
+
+}
+
+.home {
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 81px;
+}
+.center-form {
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 81px;
+}
+.logo {
+    background-color: #E5E5E5;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+}
+.logo-home {
+    background-color: #E5E5E5;;
+    position: relative;
+    padding: 5px;
+}
+.top-user a {
+    align-items: right;
+}
+
+.bottonuser {
+    background-color: #E5E5E5;;
+    position: relative;
+    padding: 5px;
+
+
+}
+
+
+
+
+.right-form {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 81px;
+}
+Footer {
+    width: 100%;
+    margin: 0;
+    height: 81px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+.RightSide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #062C43;
+
+}
+
+.RightSide p {
+    margin: 10px;
+    font-size: 13px;
+    color: #F1F1F1;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+.RightSide a {
+    color: #F1F1F1;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+
+P {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    text-align: right;
+    color: #232323;
+    margin: 10px;
+
+}
+
+.form-register {
+
+    width: auto;
+    box-shadow: 0px 2px 5px 4px
+        rga(0,0,0,0.05);
+    padding: 20px 30px;
+    border-radius: 20px;
+    float: center;
+    margin: 20px;
+    justify-content: center;
+    }
+    .form-register h1 {
+        float: center;
+        height: 80px;
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        margin-bottom: 20px;
+        margin: 5px;
+        font-size: 25px;
+        text-align: center;
+        color: #062C43;
+    }
+
+    .form-register .primera{
+        box-sizing: border-box;
+        width: 47%;
+        height: 15%;
+        margin-left: 13px;
+        margin-bottom: 13px;
+        padding: 11px 10px;
+        background: #F1F1F1;
+        border-radius: 5px;
+        border: 1px solid #062C43;
+    }
+    .form-register .controls{
+        float: center;
+        box-sizing: border-box;
+        width: 95.4%;
+        height: 15%;
+        margin-left: 13px;
+        margin-bottom: 13px;
+        padding: 11px 10px;
+        background: #F1F1F1;
+        border-radius: 5px;
+        border: 1px solid #062C43;
+    }
+
+    .form-register .subcat{
+        float: center;
+        width: 95.4%;
+        height: 15%;
+        margin-left: 13px;
+        padding: 11px 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .subcat a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #232323;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .form-register .box {
+        width: 20px;
+        height: 18px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #062c43;
+        box-shadow: 0px 0px 4px 1px
+            rgba(0,0,0,0.25);
+    }
+    .form-register .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        align-items: center;
+        text-align: center;
+        background-color: #AAE2D7;
+        border-radius: 100px;
+        color: #062C43;
+        width: 20%;
+        border: 1px solid #062C43;
+        margin-top: 19px;
+        margin-bottom: 19px;
+        float: center;
+        margin: 0 auto;
+    }
+    .form-register p {
+        justify-content: center;
+        text-align: center;
+        height: 40px;
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        font-size: 15px;
+        color: #062C43;
+    }
+
+
+
+.form-login {
+
+    width: auto;
+    background: #ebebeB;
+    box-shadow: 0px 2px 5px 4px
+        rga(0,0,0,0.05);
+    padding: 20px 30px;
+    border-radius: 20px;
+    float: right;
+    margin: 20px;
+    }
+.right-form h5 {
+            float: center;
+            height: 54px;
+            font-family: 'Noto Sans', sans-serif;
+            font-style: normal;
+            margin-bottom: 20px;
+            margin: 5px;
+            font-size: 25px;
+            text-align: center;
+            color: #062C43;
+        }
+
+.right-form .controls {
+    float: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 13px;
+    padding: 11px 10px;
+    background: #F1F1F1;
+    border-radius: 8px;
+    border-color: #F1F1F1;
+    border-style: none;
+        }
+
+.right-form .buttons {
+    height: 55px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    background-color: #062C43;
+    border-radius: 100px;
+    color: #FFFFFF;
+    width: 100%;
+    border: none;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    float: center;
+        }
+
+.right-form p {
+    float: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #062C43;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    align-items: center;
+    text-align: right;
+        }
+
+@media only screen and (max-width: 767px){
+    .left-form {
+        width: 100%;
+        height: 50%;
+        padding-bottom: 50px;
+    }
+    .right-form {
+        height: 50%;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .form-login {
+        height: 95%;
+        padding: 0 1em;
+    }
+    .right-form .buttons {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    .left-form {
+        width: 100%;
+        height: 50%;
+        padding-bottom: 50px;
+    }
+    .right-form {
+        height: 50%;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .form-login {
+        height: 100%;
+        padding: 0 1em;
+    }
+    .form-login h5 {
+        margin-bottom: 5px;
+        height: auto;
+    }
+    p {
+        margin: auto;
+        font-size: 13px;
+    }
+    .right-form .controls {
+        margin: 5px;
+    }
+    .right-form .buttons {
+        height: 35px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .right-form a {
+        font-size: 13   px;
+    }
+}
+@media only screen and (max-width: 819px){
+
+    .top {
+        height: 10%;
+        display: flex;
+        overflow: hidden;
+    }
+    .logo {
+        background-color: #E5E5E5;
+        margin: 0;
+    }
+
+    .center-form {
+        height: 90%;
+        padding-bottom: 81px;
+    }
+    .form-register {
+        margin: 10px;
+    }
+    .form-register h1 {
+        float: center;
+        height: 20px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form-register .primera{
+        box-sizing: border-box;
+        width: 100%;
+        height: 10%;
+        margin-left: 0px;
+    }
+    .form-register .controls{
+        width: 100%;
+        height: 10%;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .form-register .subcat{
+        float: center;
+        height: 10%;
+        margin-left: 10px;
+    }
+
+    .subcat a {
+        font-size: 13px;
+        line-height: 12px;
+    }
+    .form-register .buttons {
+
+        height: 30px;
+        font-size: 17px;
+        line-height: 25px;
+        width: 50%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .form-register .box {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+@media only screen and (max-width: 705px){
+
+    .form-register p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 429px){
+
+    .form-register p {
+        margin: 5px;
+        font-size: 8px;
+        width: 100%;
+    }
+}
